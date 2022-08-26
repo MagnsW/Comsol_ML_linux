@@ -1,0 +1,13 @@
+matplotlib
+pandas
+numpy
+scipy
+seaborn
+jupyter
+sklearn
+tensorflow
+acoustics
+pydot
+graphviz
+findpeaks
+opencv-python
