@@ -166,6 +166,7 @@ def FK_thickness_estimation(fk, k_array, f_array, dx, disp_curve_interpolator, d
             plt.plot(do_aliasing(-disp_curves[curve], kNyq), f_array_dispersion / 1000, ".", alpha=0.5)
         plt.ylim(0, maxfreq/1000)
         plt.xlabel('Wavenumber')
+        plt.xlim(k_array.min(), k_array.max())
         #plt.ylabel('Frequency (kHz)')
         plt.title('FK plot with evaluated dispersion curves')
         # plt.colorbar()

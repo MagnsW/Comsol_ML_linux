@@ -54,6 +54,6 @@ def make_fk(traces, dt, dx):
     nt, nx = traces.shape
     #t_array = np.arange(nt) * dt
     f_array = fft.fftshift(fft.fftfreq(nt, dt))
-    x_array = fft.fftshift(fft.fftfreq(nx, dx))
+    k_array = fft.fftshift(fft.fftfreq(nx, dx))
     fk = fft.fftshift(fft.fft2(traces))
-    return fk, x_array, f_array
+    return fk, k_array, f_array
